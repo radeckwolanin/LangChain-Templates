@@ -1,0 +1,49 @@
+{
+    "memory": null,
+    "verbose": false,
+    "tags": null,
+    "metadata": null,
+    "prompt": {
+        "input_variables": [
+            "company",
+            "service"
+        ],
+        "output_parser": null,
+        "partial_variables": {},
+        "messages": [
+            {
+                "prompt": {
+                    "input_variables": [
+                        "company",
+                        "service"
+                    ],
+                    "output_parser": null,
+                    "partial_variables": {},
+                    "template": "What is a good name for a {company} that provides {service}?",
+                    "template_format": "f-string",
+                    "validate_template": true,
+                    "_type": "prompt"
+                },
+                "additional_kwargs": {}
+            }
+        ],
+        "_type": "chat"
+    },
+    "llm": {
+        "model_name": "gpt-3.5-turbo",
+        "model": "gpt-3.5-turbo",
+        "request_timeout": null,
+        "max_tokens": null,
+        "stream": false,
+        "n": 1,
+        "temperature": 0.8,
+        "_type": "openai-chat"
+    },
+    "output_key": "text",
+    "output_parser": {
+        "_type": "default"
+    },
+    "return_final_only": true,
+    "llm_kwargs": {},
+    "_type": "llm_chain"
+}
